@@ -950,10 +950,12 @@ export function TaskCreateSheet({ open, onClose }: { open: boolean; onClose: () 
 
 export function CategoryLimitSheet({
   categoryId,
+  spent,
   open,
   onClose,
 }: {
   categoryId: string | null;
+  spent?: number;
   open: boolean;
   onClose: () => void;
 }) {
@@ -967,7 +969,7 @@ export function CategoryLimitSheet({
 
   if (!category) return null;
 
-  const used = category.spent;
+  const used = typeof spent === 'number' ? spent : category.spent;
   const max = Math.max(60_000, Math.ceil(used / 10_000) * 10_000 + 10_000);
 
   const save = () => {

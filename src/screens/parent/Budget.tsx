@@ -375,6 +375,7 @@ export function BudgetScreen() {
 
       <CategoryLimitSheet
         categoryId={limitCategoryId}
+        spent={limitCategory ? categorySpentForMonth(limitCategory, monthOffset) : undefined}
         open={Boolean(limitCategory)}
         onClose={() => setLimitCategoryId(null)}
       />
