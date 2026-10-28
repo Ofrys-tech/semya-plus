@@ -1,0 +1,17 @@
+{
+  "name": "Семья+ — семейный банкинг",
+  "short_name": "Семья+",
+  "description": "Общий бюджет, детская карта, семейные цели и игровые миссии по финграмотности.",
+  "lang": "ru",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f5f1fc",
+  "theme_color": "#6b3ff2",
+  "icons": [
+    { "src": "assets/app-icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/app-icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "assets/app-icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
